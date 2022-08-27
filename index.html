@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Saver Bank</title>
+</head>
+
+<body>
+    <div class="container mx-auto px-4 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-52">
+        <h1 class="font-mono font-bold text-5xl text-emerald-700 text-center my-4">Saver Bank <i
+                class="fa-solid fa-sack-dollar"></i></h1>
+        <div class="container lg:grid lg:grid-cols-2 lg:gap-16 mx-auto" >
+            <div class="saver-image">
+                <img class="h-[40rem]" src="image/saver.jpg" alt="">
+            </div>
+
+            <div class="form-control m-auto">
+                <h3 class="heading font-bold text-center text-2xl py-3">Income</h3>
+
+                <div class="grid grid-cols-2 gap-4 place-content-evenly ">
+                    <div class="max-w-xs">
+                        <p class="flex justify-center">Income:</p>
+                    </div>
+                    <div>
+                        <input class="bg-slate-300 py-2 mx-2 text-center" type="text" id="income" value="0"><br>
+                    </div>
+                </div>
+                <div class="expense">
+                    <h3 class="font-bold text-center text-2xl mt-3">Expenses</h3><br>
+                    <div class="expense-all ">
+                        <div class="grid grid-cols-2 gap-8 place-content-evenly">
+                            <div class="max-w-xs">
+                                <p class="flex justify-center">Food:</p>
+                            </div>
+                            <div> <input class="bg-slate-300 py-2 mb-2 text-center" type="text" id="income" value="0">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-8 place-content-evenly">
+                            <div class="max-w-xs">
+                                <p class="flex justify-center">Rent:</p>
+                            </div>
+                            <div><input class="bg-slate-300 py-2 my-2 text-center" type="text" id="income"
+                                    value="0"><br></div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-8 place-content-evenly">
+                            <div class="max-w-xs">
+                                <p class="flex justify-center">Clothes:</p>
+                            </div>
+                            <div><input class="bg-slate-300 py-2 my-2 text-center" type="text" id="income"
+                                    value="0"><br></div>
+                        </div>
+                        <div class="text-center m-8">
+                            <button class="bg-sky-400 text-white text-xl px-8 py-2 rounded">
+                                Calculate
+                            </button>
+                        </div>
+                        <div class="text-center text-2xl font-bold mb-4">
+                            <h3 class="">Total Expenses: <span>0</span></h3><br>
+                            <h3>Balance: <span>0</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-10 my-2">
+                        <div class="flex justify-center">
+                            Save:
+                        </div>
+                        <div>
+                            <input class="bg-slate-300 py-2 text-center w-full" type="text" value="0">
+                        </div>
+                        <div class="text-center">
+                           %
+                        </div>
+                        <div>
+                            <button class="bg-sky-400 text-white text-xl px-10 py-2 rounded">
+                                Save
+                            </button> 
+                        </div>
+    
+                    </div>
+                    <div class="text-center text-2xl font-bold mt-4">
+                        <h3>Saving Amount: <span>0</span></h3><br>
+                        <h3>Remaining Balance:<span>0</span></h3>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
